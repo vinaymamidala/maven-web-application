@@ -140,6 +140,7 @@
 				<packaging>maven-plugin</packaging>
 				<name>SortPom Plugin</name>
 				<description>A Maven plugin that sorts the pom.xml file.</description>
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
