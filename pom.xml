@@ -134,6 +134,12 @@
 					</webApp>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+				<artifactId>sortpom-maven-plugin</artifactId>
+				<packaging>maven-plugin</packaging>
+				<name>SortPom Plugin</name>
+				<description>A Maven plugin that sorts the pom.xml file.</description>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
