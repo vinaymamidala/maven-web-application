@@ -11,11 +11,11 @@ node
       echo "Jenkins URL ${env.JENKINS_URL}"
       echo "JOB Name ${env.JOB_NAME}"
 
-   properties([[$class: 'JiraProjectProperty'], buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), pipelineTriggers([pollSCM('* * * * *')])])
+ //  properties([[$class: 'JiraProjectProperty'], buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), pipelineTriggers([pollSCM('* * * * *')])])
 
   stage("CheckOutCode")
   {
-   git branch: 'master', credentialsId: '	MyGitHub-Credentials', url: 'https://github.com/vinaymamidala/maven-web-application.git'
+   git branch: 'master', credentialsId: 'MyGitHub-Credentials', url: 'https://github.com/vinaymamidala/maven-web-application.git'
  }
 
  stage("Build")
