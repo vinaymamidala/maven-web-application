@@ -1,4 +1,4 @@
-node (label: 'slaves')
+node (label: 'master')
  {
 
   def mavenHome = tool name: "maven-default"
